@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PuroshKard - Make Every Visit Count</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Heebo:100,300" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header Start -->
+ <header>
+  <div class="top">
+   <div><a href="#"><img src="http://www.pngmart.com/files/2/Superman-Logo-PNG-Image.png"></a></div>
+   <div><a class="btn" href="#">Join Us</a></div>
+  </div>
+</header>
+<!-- Header End -->
+
+<!-- Main Content Start -->
+  <div class="main-section">
+
+    <!-- CTA Start -->
+    <section class="wrap_top">
+        <div class="cta_hero">
+            <h1 itemprop="headline">PuroshKard - Making Every Visit Count </h1>
+            <p itemprop="description">The Only Loyalty Card You Will Ever Need</p>
+            <a itemprop="url" id="scrollButton" href="#How">How It Works</a>
+        </div>
+      <div class="lower"></div>
+    </section>
+    <!-- CTA End -->
+
+
+  <!-- Video Start -->
+  <section class="video_wrap" >
+      <div class="video" id="How">
+        <div class="resp-container" >
+          <iframe class="resp-iframe" src="https://www.youtube.com/embed/XjB101k2Bog" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <h3>Watch how PuroshKard works</h3>
+      </div>
+  </section> 
+  <!-- Video End -->
+
+  <!-- Features Start -->
+  <section class="features">
+    <div class="wrap">
+
+      <div class="top">
+        <h3>Benefits of using PuroshKard</h3>
+        <p>Reward yourself</p>
+      </div>
+
+      <div class="blocks">
+
+        <div class="first">
+          <div class="one">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/150px-Google_%22G%22_Logo.svg.png">
+          </div>
+          <div class="one">
+          
+            <img src="http://logot.org/wp-content/uploads/2017/10/logo-quiz-viewing-gallery-577166-150x150.jpg">
+          </div>
+          <div class="one">
+           
+            <img src="https://i2.wp.com/twinstrivia.com/wp-content/uploads/2011/06/2002-present-Twins-cap-logo.gif?resize=150%2C150">
+          </div>
+          <div class="one">
+           
+            <img src="https://i2.wp.com/twinstrivia.com/wp-content/uploads/2011/06/2002-present-Twins-cap-logo.gif?resize=150%2C150">
+          </div>
+       
+          </div>
+        </div>
+
+        <div class="second">
+          <div class="one">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/150px-Google_%22G%22_Logo.svg.png">
+          </div>
+          <div class="one">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/150px-Google_%22G%22_Logo.svg.png">
+          </div>
+          <div class="one">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/150px-Google_%22G%22_Logo.svg.png">
+          </div>
+          <div class="one">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/150px-Google_%22G%22_Logo.svg.png">
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+  </section>
+  <!-- Features End -->
+
+
+  <!-- How to Start -->
+  <section class="howto">
+      <div class="wrap">
+        
+        <div class="top">
+          <h3>How to use Puroskard</h3>
+          <p>It's as easy as 1,2</p>
+        </div>
+        
+        <div class="steps">
+          <div class="one">
+            <div><p>1<i class="fas fa-caret-right"></i></p></div>
+            <div>
+              <h4>Grab a PuroshKard Card</h4>
+              <p>On Merchant outlet</p>
+            </div>
+          </div>
+
+          <div class="two">
+            
+            <div>
+              <h4>Register and Scan</h4>
+              <p>Check-in by scanning PuroshKard on Tab</p>
+            </div>
+            <div><p>2<i class="fas fa-caret-left"></i></p></div>
+          </div>
+
+          <div class="three">
+            <h4>Win Rewards for Check-ins</h4>
+            <p>Check-in every time to get rewarded</p>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <!-- How to End -->
+
+
+
+<!-- Footer Start -->
+<footer>
+    <div class="wrap">
+      
+    </div>
+</footer>
+<!-- Footer End -->
+
+  </div>
+<!-- Main Content End -->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+ function anchorLinkHandler(e) {
+   //returns the size of the element and its position relative to the viewport.
+    const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+
+    //prevent click
+    e.preventDefault();
+    //get the "a" attribute of href
+    const targetID = this.getAttribute("href");
+    //select the target id
+    const targetAnchor = document.querySelector(targetID);
+
+    if (!targetAnchor) return;
+    const originalTop = distanceToTop(targetAnchor);
+
+    //Scrolls the document in the window by the given amount
+    window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
+
+    const checkIfDone = setInterval(function() {
+      //if Height (in pixels) of the browser window viewport including, if rendered, the horizontal scrollbar + the number of pixels the document is currently scrolled along the vertical axis greater than height of the element 
+        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+
+        if (distanceToTop(targetAnchor) === 0 || atBottom) {
+          //foucs next sequential keyboard navigation
+            targetAnchor.tabIndex = "-1";
+            // focus off screen content by button click
+            targetAnchor.focus();
+            //load and append button ID on URL via push state
+            window.history.pushState("", "", targetID);
+            //reset and clear setInterval function
+            clearInterval(checkIfDone);
+        }
+    }, 100);
+}
+
+const linksToAnchors = document.querySelectorAll('a[href^="#"]');
+
+linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
+</script>
+
+</body>
+</html>
