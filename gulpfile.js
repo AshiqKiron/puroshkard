@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var sass = require('gulp-sass');
@@ -29,7 +29,7 @@ gulp.task('watch:styles', function () {
 	livereload.listen();
 	gulp.watch('**/*.scss', ['styles']);
 });
-=======
+
 var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 var sass = require('gulp-sass');
@@ -60,4 +60,3 @@ gulp.task('watch:styles', function () {
 	livereload.listen();
 	gulp.watch('**/*.scss', ['styles']);
 });
->>>>>>> origin/master
