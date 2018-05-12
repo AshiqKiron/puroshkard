@@ -2,10 +2,14 @@
 website for puroshkard
 
 
+### Version 3 (12/5/18)
+- Change: Merchant logo section
+
+
 
 ### Version 2
 - Add: Footer
-- Changed: Steps section color
+- Change: Steps section color
 
 
 
